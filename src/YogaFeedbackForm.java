@@ -154,11 +154,12 @@ public class YogaFeedbackForm extends JFrame {
             pstmt.setBoolean(8, teacherKnowledge);
 
             pstmt.executeUpdate();
-            JOptionPane.showMessageDialog(this, "Survey Submitted Successfully!");
             System.out.println("Survey response saved successfully!");
+            JOptionPane.showMessageDialog(this, "data daved successfully");
 
         } catch (Exception e) {
             e.printStackTrace();
+            JOptionPane.showMessageDialog(this, e);
         }
     }
 
